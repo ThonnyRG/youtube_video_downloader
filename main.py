@@ -1,9 +1,15 @@
-from UI import frameWithe
 
+import yt_dlp
 
+from back.mediaDownloader import mediaDownloader
+
+# Defining main function
 def main():
-    print("in construction")
-    f1 = frameWithe()
-    
-    f1.mainloop()
+    print("hey there")
+
+
+# Using the special variable 
+# __name__
+if __name__=="__main__":
+    main()
    

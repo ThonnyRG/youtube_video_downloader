@@ -12,5 +12,5 @@ class AlertFrame():
         Alert = tk.Tk()
         Alert.geometry("200x200")
         Alert.title("Warning")
-        Label = tk.Label(Alert, text = type.AlertName, font = ('Google', 16))
+        Label = tk.Label(Alert, text = type.AlertName, font = ('Roboto', 16))
        
