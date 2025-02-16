@@ -1,15 +1,11 @@
 
-import yt_dlp
 
 from back.mediaDownloader import mediaDownloader
 
-# Defining main function
+
 def main():
-    print("hey there")
-
-
-# Using the special variable 
-# __name__
+    m = mediaDownloader("https://www.youtube.com/shorts/TJhWvEU_1_Y","/Users/macbook/Downloads/")
+    m.setLinkMedia()
 if __name__=="__main__":
     main()
-   
+  
