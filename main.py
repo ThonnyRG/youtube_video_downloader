@@ -1,11 +1,7 @@
-
-
-from back.mediaDownloader import mediaDownloader
-
+from UI.frameBlank import FrameWhite
 
 def main():
-    m = mediaDownloader("https://www.youtube.com/shorts/TJhWvEU_1_Y","/Users/macbook/Downloads/")
-    m.setLinkMedia()
+    FrameWhite()
 if __name__=="__main__":
     main()
   
