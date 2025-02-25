@@ -34,7 +34,7 @@ class FrameWhite():
    pasteButton = mtk.Button(root, text = "Paste",font = "Roboto 20" , borderless = 1, fg = "#174EA6", bg = "#222222", activebackground="#222222", activeforeground = "#174EA6")
    pasteButton.place(x = 195, y = 300) 
   
-   downloadButton = mtk.Button(root, text = "Download",font = "Roboto 20" , fg = "#4285F4", bg = "#D2E3FC")
+   downloadButton = mtk.Button(root, text = "Download",font = "Roboto 20" , fg = "#4285F4", bg = "#D2E3FC", state =tk.DISABLED)
    downloadButton.place(x = 350, y = 300) 
   
    root.mainloop()
