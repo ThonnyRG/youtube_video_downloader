@@ -19,10 +19,10 @@ class FrameWhite():
    labelSave = tk.Label(root, text = "Save to:", font="Roboto 20", bg= "#222222") 
    labelSave.place(x = 210, y = 140)
 
-   downloadButton = ctk.CTkEntry(root,textvariable = tk.StringVar(root,"Users/macbook/Downloads") ,height= 46, width=327, state = tk.DISABLED)
+   downloadButton = ctk.CTkEntry(root,textvariable = tk.StringVar(root,"Users/macbook/Downloads") ,height= 46, width=327, state = tk.DISABLED, font=("roboto",22), text_color = "#9AA0A6")
    downloadButton.place( x = 30, y = 172)
 
-   entrylabel = ctk.CTkEntry(root, placeholder_text="ENTER URL VIDEO",height= 45, width=450)
+   entrylabel = ctk.CTkEntry(root, placeholder_text="ENTER URL VIDEO",height= 45, width=450, font=("roboto",22), text_color = "#9AA0A6")
    entrylabel.place( x = 30, y = 237)
   
    browseButton = mtk.Button(root, text = "Browse", font = "Roboto 20", fg = "#ffffff", bg = "#4285F4", height= 47,width=98,  borderless = 1,activebackground="#315b9e")
