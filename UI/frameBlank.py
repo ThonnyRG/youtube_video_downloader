@@ -25,16 +25,16 @@ class FrameWhite():
    entrylabel = ctk.CTkEntry(root, placeholder_text="ENTER URL VIDEO",height= 45, width=450)
    entrylabel.place( x = 30, y = 237)
   
-   browseButton = mtk.Button(root, text = "Browse", font = "Roboto 20", fg = "#ffffff", bd = 0, bg = "#4285F4", height= 47,width=98)
+   browseButton = mtk.Button(root, text = "Browse", font = "Roboto 20", fg = "#ffffff", bg = "#4285F4", height= 47,width=98,  borderless = 1,activebackground="#315b9e")
    browseButton.place(x = 384, y = 170)
-   
-   clearButton = mtk.Button(root, text = "Clear",font = "Roboto 20" , fg = "#174EA6", bd = 0, bg = "#222222", borderless = True)
-   clearButton.place(x = 30, y = 300) 
   
-   pasteButton = mtk.Button(root, text = "Paste",font = "Roboto 20" , fg = "#174EA6", bd = 0, bg = "#222222")
+   clearButton = mtk.Button(root, text = "Clear",font = "Roboto 20",fg = "#174EA6", bg = "#222222", borderless = 1, activebackground="#222222", activeforeground = "#174EA6")
+   clearButton.place(x = 30, y = 300) 
+ 
+   pasteButton = mtk.Button(root, text = "Paste",font = "Roboto 20" , borderless = 1, fg = "#174EA6", bg = "#222222", activebackground="#222222", activeforeground = "#174EA6")
    pasteButton.place(x = 195, y = 300) 
   
-   downloadButton = mtk.Button(root, text = "Download",font = "Roboto 20" , fg = "#4285F4", bd = 0, bg = "#4E4E4E")
+   downloadButton = mtk.Button(root, text = "Download",font = "Roboto 20" , fg = "#4285F4", bg = "#D2E3FC")
    downloadButton.place(x = 350, y = 300) 
   
    root.mainloop()
