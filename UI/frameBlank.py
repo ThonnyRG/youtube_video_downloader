@@ -4,7 +4,7 @@ import tkmacosx as mtk
 
 class FrameWhite():
    root = tk.Tk()
-  
+ 
    root.geometry("500x500")
    root.title("Media downloader")
    root.resizable(width = False,height = False)
@@ -27,7 +27,7 @@ class FrameWhite():
   
    browseButton = mtk.Button(root, text = "Browse", font = "Roboto 20", fg = "#ffffff", bg = "#4285F4", height= 47,width=98,  borderless = 1,activebackground="#315b9e")
    browseButton.place(x = 384, y = 170)
-  
+ 
    clearButton = mtk.Button(root, text = "Clear",font = "Roboto 20",fg = "#174EA6", bg = "#222222", borderless = 1, activebackground="#222222", activeforeground = "#174EA6")
    clearButton.place(x = 30, y = 300) 
  
