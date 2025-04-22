@@ -1,7 +1,11 @@
 import tkinter as tk
+from wsgiref import validate
 import customtkinter as ctk 
 import tkmacosx as mtk
+import requests
 import os
+
+from UI import AlertFrame
 
 class FrameWhite():
   
@@ -28,6 +32,7 @@ class FrameWhite():
 
    entrylabel = ctk.CTkEntry(root, placeholder_text="ENTER URL VIDEO",height= 45, width=450, font=("roboto",22), text_color = "#9AA0A6")
    entrylabel.place( x = 30, y = 237)
+   inputUrl = entrylabel.get()
   
    browseButton = mtk.Button(root, text = "Browse", font = "Roboto 20", fg = "#ffffff", bg = "#4285F4", height= 47,width=98,  borderless = 1,activebackground="#315b9e")
    browseButton.place(x = 384, y = 170)
@@ -40,6 +45,17 @@ class FrameWhite():
   
    folderTextbox = mtk.Button(root, text = "Download",font = "Roboto 20" , fg = "#4285F4", bg = "#D2E3FC", state =tk.DISABLED)
    folderTextbox.place(x = 350, y = 300) 
-  
+ 
+   def validateURL(UrlVideo):
+      r = requests.get(UrlVideo)
+      "Video unavailable" in r.text
+   
+   verifyingUrl = validateURL(inputUrl)
+   
+   def buttonLink(option):
+      if option:
+         a = AlertFrame("Not valid url video")
+         a.mainLoop()
+         
    root.mainloop()
      
