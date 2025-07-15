@@ -5,19 +5,17 @@ class mediaDownloader():
     def __init__(Self, LinkVideo, SaveFolder):
         Self.LinkVideo = LinkVideo
         Self.SaveFolder = SaveFolder
-        
+       
                 
-            
-    def setLinkMedia(self):
-        folder = self.SaveFolder
-        format = folder+"%(title)s.mp4"
-        linkMedia = self.LinkVideo
-        
-        opts = {'outtmpl': format, 'format' : 'best',}
-        
+    def _getOptions(self):
+        format = self.SaveFolder+"%(title)s.mp4"
+        return{'outtmpl': format, 'format' : 'best',}
+    
+    def downloadMedia(self):
         try:
+            opts = self._getOptions()
             with yt_dlp.YoutubeDL(opts) as ydl:
-                ydl.download([linkMedia])
-                print("downloading")
+                ydl.download([self.LinkVideo])
+                return "downloading"
         except Exception as e:
-            print(f"Error: {e}")
+            return f"Error: {str(e)}"
