@@ -36,7 +36,10 @@ class button():
         if (answer != True):
             self._button.configure(state = tk.DISABLED)
         return self
-        
+    
+    def setAction(self, cmd):
+        self._button.configure(command = cmd)
+        return self
         
     
    # browseButton = mtk.Button(root, text = "Browse", font = "Roboto 20", fg = "#ffffff", bg = "#4285F4", height= 47,width=98,  borderless = 1,activebackground="#315b9e")

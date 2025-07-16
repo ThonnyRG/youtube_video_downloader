@@ -2,6 +2,7 @@ from View.frameBlank import FrameWhite
 from View.src.button import button
 from View.src.label import label
 from View.src.textBox import textBox
+from tkinter import messagebox
 
 def main():
     blankP = FrameWhite()
@@ -27,6 +28,10 @@ def main():
     browseButton.setBorderless()
     browseButton.setPlace(384, 170)
     
+    def pythonIsTrash():
+        print("python is trash")
+        
+    browseButton.setAction(pythonIsTrash)
     # browseButton = mtk.Button(root, text = "Browse", font = "Roboto 20", fg = "#ffffff", bg = "#4285F4", height= 47,width=98,  borderless = 1,activebackground="#315b9e")
     # browseButton.place(x = 384, y = 170)
    
