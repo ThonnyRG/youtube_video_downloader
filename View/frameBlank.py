@@ -1,4 +1,4 @@
-from View.src.frame import frame
+from View.components.frame import frame
 
 
 class FrameWhite(frame):
