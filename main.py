@@ -2,7 +2,6 @@ from View.frameBlank import FrameWhite
 from View.src.button import button
 from View.src.label import label
 from View.src.textBox import textBox
-from tkinter import messagebox
 
 def main():
     blankP = FrameWhite()
