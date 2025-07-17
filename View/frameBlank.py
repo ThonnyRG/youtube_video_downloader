@@ -6,7 +6,7 @@ class FrameWhite(frame):
    def __init__(self):
       super().__init__()
       self._setupFrameWhite()
-   
+  
    def _setupFrameWhite(self):
       (self.setSize(500, 500).
       setTitle("python is trash")
@@ -38,7 +38,7 @@ class FrameWhite(frame):
  
    # pasteButton = mtk.Button(root, text = "Paste",font = "Roboto 20" , borderless = 1, fg = "#174EA6", bg = "#222222", activebackground="#222222", activeforeground = "#174EA6")
    # pasteButton.place(x = 195, y = 300) 
-  
+ 
    # folderTextbox = mtk.Button(root, text = "Download",font = "Roboto 20" , fg = "#4285F4", bg = "#D2E3FC", state =tk.DISABLED)
    # folderTextbox.place(x = 350, y = 300) 
 
