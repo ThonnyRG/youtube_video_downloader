@@ -1,16 +1,16 @@
 from View.buttons.blueButton import blueButton
-from View.buttons.clearButton import clearButton
 from View.frames.defaultFrame import defaultFrame
 from View.labels.titleLabel import titleLabel
+from View.labels.underlineLabel import underlineLabel
 
 def main():
-    blankP = defaultFrame("Warning")
-    labelTittle = titleLabel(blankP.getRoot(), "Warning",200, 40)
-    def a():
+    blankP = defaultFrame("Downloader")
+    labelTittle = titleLabel(blankP.getRoot(), "Media video downloader",120, 40)
+    def a(event):
         print("Python is trash")
     yesButton = blueButton(blankP.getRoot(), "Yes", a, 75, 400)
     noButton = blueButton(blankP.getRoot(), "No", a, 300, 400)
-    noClearButton = clearButton(blankP.getRoot(), "CLEAR", a, 100, 100)
+    zelda = underlineLabel(blankP.getRoot(), "Media video downloader", 200, 100, a)
     # linkField = textBox(blankP.getRoot())
     # linkField.setText("Python is trash")
     # linkField.setFont("roboto", 22)
