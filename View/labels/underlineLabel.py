@@ -10,18 +10,21 @@ class underlineLabel(label):
         self._font = font.Font(family = "Roboto", size = 24, underline = True)
         
         super().__init__(frame)
-        
+       
         self._addAcion()
+        self._setPosition()
         self._setForeground()
         self._setupLabel()
         
     def _setupLabel(self):
         (self.setText(self._text).
          setFont(self._font).
-         setBackground("#222222").
-         setPosition(self._x, self._y)
+         setBackground("#222222")
          )
         
+    def _setPosition(self):
+        self._label.place(x = self._x, y = self._y)    
+    
     def _addAcion(self):
         self._label.pack()
         self._label.bind('<Button-1>', self._cmd)

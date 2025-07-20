@@ -8,5 +8,8 @@ class frameAlert(frame):
         
     def _setupFrame(self):
         (self.setSize(500, 200)
-         .setTitle("Atention!")
+         .setTitle("Message")
          .setBackground("#222222"))
+        
+    def closeWindow(self):
+        self._root.destroy()

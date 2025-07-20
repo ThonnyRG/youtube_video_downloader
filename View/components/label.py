@@ -12,10 +12,6 @@ class label():
         self._label.config(font = customFont)
         return self
         
-    def setPosition(self, xPlace: int, yPlace: int):
-        self._label.place(x = xPlace, y = yPlace)
-        return self
-        
     def setBackground(self, background : str):
         self._label.config(bg = background)
         return self
