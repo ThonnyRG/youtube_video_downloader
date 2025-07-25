@@ -6,12 +6,13 @@ class subtitleLabel(label):
         self._text = text
         self._x = x
         self._y = y
+        
         super().__init__(frame)
         self._setupLabel()
-        self._setFontColor()
+        self._setAlignment()
         self._setFontColor()
         self._setPosition()
-        self._setWrap()
+
         
     def _setupLabel(self):
         (self.setText(self._text).
@@ -21,7 +22,7 @@ class subtitleLabel(label):
         
     def _setPosition(self):
         self._label.pack(padx = self._x, pady = self._y)
-        
+       
     def _setFontColor(self):
         self._label.config(fg = "#9AA0A6")
         return self
@@ -30,5 +31,5 @@ class subtitleLabel(label):
         self._label.config(anchor = "w", justify = "left")
         return self
     
-    def _setWrap(self):
-        self._label.config(wraplength= 250)
+    def setWrap(self, warp : int):
+        self._label.config(wraplength = warp)
