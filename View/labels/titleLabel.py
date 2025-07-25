@@ -17,5 +17,5 @@ class titleLabel(label):
          )
 
     def _setPosition(self):
-        self._label.place(x = self._x, y = self._y)    
+        self._label.pack(padx = self._x, pady = self._y)    
     
