@@ -24,5 +24,5 @@ class textBox():
         return self._textBox.get()
         
     def setPosition(self, x: int, y : int):
-        self._textBox.place(x = x, y = y)
+        self._textBox.pack(padx = x, pady = y)
         
