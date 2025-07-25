@@ -12,10 +12,9 @@ class fileDownloader:
             root.wm_attributes('-topmost', 1)
             
             folder_path = filedialog.askdirectory(
-                title = "Select the folder where you can save the video",
                 initialdir = saveFolder
             )
-            
+           
             root.destroy()
             
             if folder_path:
