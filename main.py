@@ -1,7 +1,6 @@
-from View.pages.alertPage import alertPage
+from View.pages.mainPage import mainPage
 
 def main():    
-    alertPage()
-    
+    mainPage()
 if __name__=="__main__":
     main()
