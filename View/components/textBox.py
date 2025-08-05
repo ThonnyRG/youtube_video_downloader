@@ -22,7 +22,16 @@ class textBox():
         
     def getText(self):
         return self._textBox.get()
-        
+    
+    def clearText(self):
+        self._textBox.delete(0, "end")
+        return self
+    
+    def insertText(self, content: str):
+        self.clearText()
+        self._textBox.insert(0, content)
+        return self
+           
     def setPosition(self, x: int, y : int):
         self._textBox.pack(padx = x, pady = y)
         

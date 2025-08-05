@@ -20,9 +20,9 @@ class frame():
     
     def setBackground(self, color: str):
         self._root.configure(bg = color)
-        
+   
+    def show(self):
+        self._root.mainloop() 
+               
     def getRoot(self):
         return self._root
-    
-    def show(self):
-        self._root.mainloop()

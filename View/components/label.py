@@ -15,6 +15,9 @@ class label():
     def setBackground(self, background : str):
         self._label.config(bg = background)
         return self
-    
+   
     def getLabel(self):
         return self._label
+    
+    def getLabelText(self):
+        return self._label["text"]

@@ -27,13 +27,26 @@ class underlineLabel(label):
     
     def _addAcion(self):
         self._label.pack()
-        self._label.bind('<Button-1>', self._cmd)
+        self._label.bind('<Button-1>',lambda e: self._cmd())
         
     def _setForeground(self):
         self._label.config(fg = "#4285F4")
         
     def _setUnderline(self):
         self._label.config(font = font.Font(family = "Roboto", size = 24, underline = self._underline))
+        
+    def updateText(self, newText: str):
+        self._text = newText
+        self.setText(newText)
+        return self
+    
+    def updateAction(self, newCMD):
+        self._cmd = newCMD
+        self._label.unbind('<Button-1>')
+        
+        if self._cmd:
+            self._label.bind('<Button-1>', lambda e: self._cmd())
+        return self
         
     
         

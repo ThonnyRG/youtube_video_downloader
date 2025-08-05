@@ -1,3 +1,4 @@
+from tkinter import DISABLED, NORMAL
 import tkmacosx as tk
 
 class button():
@@ -35,7 +36,9 @@ class button():
     
     def setEnabled(self, answer : bool):
         if (answer != True):
-            self._button.config(state = tk.DISABLED)
+            self._button.config(state = DISABLED)
+        else:
+            self._button.config(state = NORMAL)
         return self
     
     def setAction(self, cmd):

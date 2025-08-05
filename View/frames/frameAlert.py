@@ -1,6 +1,5 @@
 from View.components.frame import frame
 
-
 class frameAlert(frame):
     def __init__(self):
         super().__init__()
