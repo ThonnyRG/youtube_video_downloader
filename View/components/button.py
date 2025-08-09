@@ -1,11 +1,25 @@
-from tkinter import DISABLED, NORMAL
-import tkmacosx as tk
+import platform
 
 class button():
     def __init__(self, frame):
-        self._button = tk.Button(frame)
+        self._setOS()
+        self._button = self.tk.Button(frame)
         self._setFont()
         
+    def _setOS(self):
+        operatingSystem = platform.system()
+        
+        if operatingSystem == "Darwin":
+            try:
+                import tkmacosx as tk
+                self.tk = tk
+            except: 
+                import tkinter as tk
+                self.tk = tk
+        else:
+            import tkinter as tk
+            self.tk =tk
+    
     def setText(self, message: str):
         self._button.config(text = message)
         return self
@@ -36,9 +50,9 @@ class button():
     
     def setEnabled(self, answer : bool):
         if (answer != True):
-            self._button.config(state = DISABLED)
+            self._button.config(state = self.tk.DISABLED)
         else:
-            self._button.config(state = NORMAL)
+            self._button.config(state = self.tk.NORMAL)
         return self
     
     def setAction(self, cmd):
