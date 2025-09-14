@@ -13,7 +13,7 @@ class alertPage():
         pass
     
     def _setupPage(self):
-        titleLabel(self._frameAlert.getRoot(), "Attention", 5, 5)
+        titleLabel(self._frameAlert.getRoot(), "Result:", 5, 5)
         subtitleLabel(self._frameAlert.getRoot(), self._message,10 ,5).setWrap(400)
         blueButton(self._frameAlert.getRoot(), "ok", self._frameAlert.closeWindow, 190, 135)
         self._frameAlert.show()

@@ -20,6 +20,6 @@ class mediaDownloader():
             opts = self._getOptions()
             with yt_dlp.YoutubeDL(opts) as ydl:
                 ydl.download([self.LinkVideo])
-                return "downloaded!!"
+                return "Video downloaded successfully!!"
         except Exception as e:
             return f"Error: {str(e)}"

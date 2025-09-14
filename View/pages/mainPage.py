@@ -45,6 +45,7 @@ class mainPage():
                 return
             downloader = mediaDownloader(currentURL.strip(), currentFolder) 
             result = downloader.downloadMedia()
+            alertPage(result)
             
         pasteButton = blueButton(frmMain.getRoot(), "Paste", lambda: [linkUrl.clearText, userActions().pasteFromClipBoard(frmMain, linkUrl)], 175, 325)
         clearButton = blueButton(frmMain.getRoot(), "Clear", linkUrl.clearText, 25, 325)       
