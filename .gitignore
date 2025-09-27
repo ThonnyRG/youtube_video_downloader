@@ -9,3 +9,8 @@ View/frames/__pycache__/frameAlert.cpython-313.pyc
 View/labels/__pycache__/subtitleLabel.cpython-313.pyc
 View/labels/__pycache__/titleLabel.cpython-313.pyc
 View/labels/__pycache__/underlineLabel.cpython-313.pyc
+View/labels/__pycache__/underlineLabel.cpython-313.pyc
+View/labels/__pycache__/titleLabel.cpython-313.pyc
+View/components/__pycache__/button.cpython-313.pyc
+Model/__pycache__/fileDownloader.cpython-313.pyc
+Model/__pycache__/mediaDownloader.cpython-313.pyc
