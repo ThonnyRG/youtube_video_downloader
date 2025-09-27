@@ -1,3 +1,11 @@
-*.pyc
-__pycache__/
 Model/__pycache__/
+Controller/__pycache__/
+View/pages/__pycache__/
+Model/__pycache__/fileDownloader.cpython-313.pyc
+Model/__pycache__/mediaDownloader.cpython-313.pyc
+View/components/__pycache__/button.cpython-313.pyc
+View/fieldText/__pycache__/defaultTextbox.cpython-313.pyc
+View/frames/__pycache__/frameAlert.cpython-313.pyc
+View/labels/__pycache__/subtitleLabel.cpython-313.pyc
+View/labels/__pycache__/titleLabel.cpython-313.pyc
+View/labels/__pycache__/underlineLabel.cpython-313.pyc
